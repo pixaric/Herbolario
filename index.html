@@ -159,7 +159,7 @@
     </section> 
 
 
-    
+
     <!-- Modal -->
     <div id="modal" class="fixed inset-0 bg-black/60 hidden items-center justify-center z-50 p-6 backdrop-blur-sm">
         <div class="bg-white p-8 rounded-3xl max-w-lg w-full shadow-2xl">
@@ -203,6 +203,8 @@
             {name: "Omega-3", cat: "Energía", icon: "🐟", desc: "Ácidos grasos esenciales para la función cognitiva y la salud cardiovascular."},
             {name: "Árbol de Té", cat: "Piel", icon: "💧", desc: "Antiséptico natural potente para el control de imperfecciones y cuidado de zonas grasas."},
             {name: "Melisa", cat: "Digestivo", icon: "🍋", desc: "Planta carminativa excelente para aliviar gases y espasmos abdominales."},
+             {name: "Ashwagandha", cat: "Energía", icon: "🌱", desc: "Adaptógeno natural que ayuda a reducir el estrés y mejorar la vitalidad general."},
+    {name: "Harpagofito", cat: "Digestivo", icon: "🦴", desc: "Tradicionalmente usado para aliviar molestias articulares y mejorar la movilidad."},
             ...Array.from({length: 35}, (_, i) => ({
                 name: `Producto Natural ${i + 16}`,
                 cat: i % 3 === 0 ? 'Digestivo' : i % 3 === 1 ? 'Energía' : 'Piel',
@@ -210,6 +212,10 @@
                 desc: `Este es nuestro preparado natural número ${i + 16}. Desarrollado con estándares de calidad para acompañar tu proceso de bienestar consciente.`
             }))
         ];
+
+
+
+        
 
         function renderProducts(filter = 'Todos', search = '') {
             const grid = document.getElementById('productGrid');
