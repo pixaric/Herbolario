@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Natureia | Bienestar Natural</title>
+    <title>Natureia | Asesoría de Bienestar y Belleza Natural</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Playfair+Display:wght@700&display=swap');
@@ -11,13 +11,14 @@
         body { font-family: 'Outfit', sans-serif; }
         h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
         
-        /* Animación suave para elementos */
         .hover-lift {
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         }
         .hover-lift:hover {
             transform: translateY(-8px);
         }
+        /* Modal Animation */
+        #modal { transition: opacity 0.3s ease; }
     </style>
 </head>
 <body class="bg-stone-50 text-emerald-950">
@@ -27,112 +28,238 @@
             <div class="text-3xl font-bold text-emerald-800 tracking-tight">NATUREIA</div>
             <div class="hidden md:flex space-x-8 text-sm font-semibold uppercase tracking-widest text-emerald-900">
                 <a href="#inicio" class="hover:text-emerald-600 transition">Inicio</a>
-                <a href="#productos" class="hover:text-emerald-600 transition">Colecciones</a>
-                <a href="#nosotros" class="hover:text-emerald-600 transition">Filosofía</a>
+                <a href="#especialidades" class="hover:text-emerald-600 transition">Áreas de Cuidado</a>
+                <a href="#esenciales" class="hover:text-emerald-600 transition">Esenciales</a>
                 <a href="#contacto" class="hover:text-emerald-600 transition">Contacto</a>
             </div>
-            <a href="#contacto" class="bg-emerald-900 text-white px-6 py-2.5 rounded-full hover:bg-emerald-700 transition duration-300 shadow-lg shadow-emerald-200">Asesoría</a>
+            <a href="#contacto" class="bg-emerald-900 text-white px-6 py-2.5 rounded-full hover:bg-emerald-700 transition duration-300 shadow-lg shadow-emerald-200">Reservar Cita</a>
         </div>
     </nav>
 
     <header id="inicio" class="relative h-screen flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0 bg-emerald-950">
-            <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb7780b9?auto=format&fit=crop&q=80&w=2000" class="w-full h-full object-cover opacity-60" alt="Naturaleza">
+            <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb7780b9?auto=format&fit=crop&q=80&w=2000" class="w-full h-full object-cover opacity-60" alt="Bienestar natural">
         </div>
         <div class="relative text-center text-white px-4">
-            <span class="text-emerald-300 font-semibold uppercase tracking-[0.3em] mb-4 block">Bienestar desde la raíz</span>
-            <h1 class="text-6xl md:text-8xl mb-8 leading-tight">Equilibrio que <br>florece en ti</h1>
-            <p class="text-xl mb-10 max-w-xl mx-auto font-light text-emerald-50">Explora nuestra selección de remedios naturales, aceites esenciales y sabiduría ancestral para una vida consciente.</p>
+            <span class="text-emerald-300 font-semibold uppercase tracking-[0.3em] mb-4 block">Tu camino hacia el equilibrio</span>
+            <h1 class="text-6xl md:text-8xl mb-8 leading-tight">Sabiduría natural <br>para tu bienestar</h1>
+            <p class="text-xl mb-10 max-w-xl mx-auto font-light text-emerald-50">No solo ofrecemos soluciones, te acompañamos en tu proceso de salud, belleza y cuidado consciente.</p>
             <div class="flex gap-4 justify-center">
-                <a href="#productos" class="bg-emerald-500 hover:bg-emerald-400 text-white px-10 py-4 rounded-full font-semibold transition-all hover:scale-105">Explorar Catálogo</a>
+                <a href="#asesoria" class="bg-emerald-500 hover:bg-emerald-400 text-white px-10 py-4 rounded-full font-semibold transition-all hover:scale-105">Pedir asesoramiento</a>
             </div>
         </div>
     </header>
 
+    <!-- ... existing section 1 (Enfoque Holístico) ... -->
     <section class="py-24 px-6 max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
         <div class="bg-white p-10 rounded-3xl border border-emerald-50 shadow-sm hover:shadow-xl transition-all duration-300">
             <div class="w-16 h-16 bg-emerald-100 flex items-center justify-center rounded-2xl text-emerald-700 text-3xl mb-6">🌿</div>
-            <h3 class="text-2xl mb-4">Ingredientes Orgánicos</h3>
-            <p class="text-stone-600">Trabajamos exclusivamente con extractos botánicos puros, cultivados bajo prácticas de comercio justo.</p>
+            <h3 class="text-2xl mb-4">Enfoque Holístico</h3>
+            <p class="text-stone-600">Entendemos tu cuerpo y mente como un todo. Buscamos el origen de tus necesidades para ofrecerte soluciones integrales.</p>
         </div>
         <div class="bg-emerald-900 text-emerald-50 p-10 rounded-3xl shadow-xl transition-all duration-300">
             <div class="w-16 h-16 bg-emerald-800 flex items-center justify-center rounded-2xl text-emerald-200 text-3xl mb-6">✨</div>
-            <h3 class="text-2xl mb-4 text-white">Asesoría Holística</h3>
-            <p class="text-emerald-200">Nuestro equipo de expertos te guía para encontrar el remedio perfecto para tus necesidades personales.</p>
+            <h3 class="text-2xl mb-4 text-white">Asesoría Profesional</h3>
+            <p class="text-emerald-200">Nuestro equipo de expertos en fitoterapia y dermocosmética te guía paso a paso, sin presiones y con cercanía.</p>
         </div>
         <div class="bg-white p-10 rounded-3xl border border-emerald-50 shadow-sm hover:shadow-xl transition-all duration-300">
             <div class="w-16 h-16 bg-emerald-100 flex items-center justify-center rounded-2xl text-emerald-700 text-3xl mb-6">📦</div>
-            <h3 class="text-2xl mb-4">Envío Sostenible</h3>
-            <p class="text-stone-600">Cuidamos el planeta desde la selección hasta tu puerta con packaging 100% compostable.</p>
+            <h3 class="text-2xl mb-4">Selección Consciente</h3>
+            <p class="text-stone-600">Solo trabajamos con marcas y preparados que respetan los ciclos naturales y la calidad científica de los principios activos.</p>
         </div>
     </section>
 
-    <section id="productos" class="py-24 bg-stone-100 px-6">
+    <!-- ... existing section 2 (Especialidades) ... -->
+    <section id="especialidades" class="py-24 bg-stone-100 px-6">
         <div class="max-w-7xl mx-auto">
-            <h2 class="text-5xl text-center mb-16 text-emerald-950">Nuestras Colecciones</h2>
+            <h2 class="text-5xl text-center mb-16 text-emerald-950">Nuestras Áreas de Especialidad</h2>
             <div class="grid md:grid-cols-4 gap-8">
-                <!-- Tarjeta de producto actualizada -->
+                <!-- Cards here -->
                 <div class="group bg-white rounded-3xl overflow-hidden hover-lift shadow-lg hover:shadow-2xl">
                     <div class="h-64 bg-emerald-200 overflow-hidden relative">
-                        <img src="https://images.unsplash.com/photo-1594897030264-ab7d87efc470?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" alt="Infusiones">
+                        <img src="https://images.unsplash.com/photo-1594897030264-ab7d87efc470?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" alt="Salud Interna">
                     </div>
-                    <div class="p-6">
-                        <h4 class="font-bold text-xl mb-2">Infusiones Relajantes</h4>
-                        <p class="text-sm text-stone-500 mb-6 line-clamp-2">Una mezcla equilibrada de valeriana, pasiflora y lavanda para tus noches.</p>
-                        <button class="w-full text-center border-2 border-emerald-900 text-emerald-900 py-3 rounded-full group-hover:bg-emerald-900 group-hover:text-white transition duration-300">Leer más</button>
+                    <div class="p-6 text-center">
+                        <h4 class="font-bold text-xl mb-2">Equilibrio Interno</h4>
+                        <p class="text-sm text-stone-500 mb-6 line-clamp-2">Soporte natural para tu sistema digestivo, nervioso y defensas diarias.</p>
                     </div>
                 </div>
-                <!-- Tarjeta 2 -->
-                <div class="group bg-white rounded-3xl overflow-hidden hover-lift shadow-lg hover:shadow-2xl">
+                <!-- Add similar cards as needed -->
+                 <div class="group bg-white rounded-3xl overflow-hidden hover-lift shadow-lg hover:shadow-2xl">
                     <div class="h-64 bg-emerald-200 overflow-hidden relative">
-                        <img src="https://images.unsplash.com/photo-1612668582766-b827e69188d3?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" alt="Cosmética">
+                        <img src="https://images.unsplash.com/photo-1612668582766-b827e69188d3?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" alt="Belleza Natural">
                     </div>
-                    <div class="p-6">
-                        <h4 class="font-bold text-xl mb-2">Aceite de Rosa Mosqueta</h4>
-                        <p class="text-sm text-stone-500 mb-6 line-clamp-2">Regeneración celular profunda con aceites de primera presión en frío.</p>
-                        <button class="w-full text-center border-2 border-emerald-900 text-emerald-900 py-3 rounded-full group-hover:bg-emerald-900 group-hover:text-white transition duration-300">Leer más</button>
+                    <div class="p-6 text-center">
+                        <h4 class="font-bold text-xl mb-2">Belleza Consciente</h4>
+                        <p class="text-sm text-stone-500 mb-6 line-clamp-2">Rutinas personalizadas con cosmética botánica de alta eficacia.</p>
                     </div>
                 </div>
-                <!-- Tarjeta 3 -->
-                <div class="group bg-white rounded-3xl overflow-hidden hover-lift shadow-lg hover:shadow-2xl">
+                 <div class="group bg-white rounded-3xl overflow-hidden hover-lift shadow-lg hover:shadow-2xl">
                     <div class="h-64 bg-emerald-200 overflow-hidden relative">
-                        <img src="https://images.unsplash.com/photo-1584308972272-9e4e7685e80f?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" alt="Vitaminas">
+                        <img src="https://images.unsplash.com/photo-1584308972272-9e4e7685e80f?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" alt="Vitalidad">
                     </div>
-                    <div class="p-6">
-                        <h4 class="font-bold text-xl mb-2">Complejo Vitamínico B</h4>
-                        <p class="text-sm text-stone-500 mb-6 line-clamp-2">Apoyo esencial para tu vitalidad diaria y sistema nervioso.</p>
-                        <button class="w-full text-center border-2 border-emerald-900 text-emerald-900 py-3 rounded-full group-hover:bg-emerald-900 group-hover:text-white transition duration-300">Leer más</button>
+                    <div class="p-6 text-center">
+                        <h4 class="font-bold text-xl mb-2">Vitalidad y Energía</h4>
+                        <p class="text-sm text-stone-500 mb-6 line-clamp-2">Complejos naturales para recuperar tu energía y vitalidad física.</p>
                     </div>
                 </div>
-                <!-- Tarjeta 4 -->
-                <div class="group bg-white rounded-3xl overflow-hidden hover-lift shadow-lg hover:shadow-2xl">
+                 <div class="group bg-white rounded-3xl overflow-hidden hover-lift shadow-lg hover:shadow-2xl">
                     <div class="h-64 bg-emerald-200 overflow-hidden relative">
-                        <img src="https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" alt="Probióticos">
+                        <img src="https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" alt="Bienestar Digestivo">
                     </div>
-                    <div class="p-6">
-                        <h4 class="font-bold text-xl mb-2">Probióticos Premium</h4>
-                        <p class="text-sm text-stone-500 mb-6 line-clamp-2">Microbiota sana, cuerpo fuerte. La base de tu bienestar digestivo.</p>
-                        <button class="w-full text-center border-2 border-emerald-900 text-emerald-900 py-3 rounded-full group-hover:bg-emerald-900 group-hover:text-white transition duration-300">Leer más</button>
+                    <div class="p-6 text-center">
+                        <h4 class="font-bold text-xl mb-2">Salud Digestiva</h4>
+                        <p class="text-sm text-stone-500 mb-6 line-clamp-2">Recupera el confort intestinal con protocolos de alimentación y fitoterapia.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- NEW INTERACTIVE SECTION -->
+    <section id="esenciales" class="py-24 px-6 max-w-7xl mx-auto">
+        <h2 class="text-4xl text-center mb-4 text-emerald-950">Esenciales de Bienestar</h2>
+        <p class="text-center text-stone-600 mb-12 max-w-2xl mx-auto">Explora nuestro catálogo completo de recursos naturales. Usa el buscador o filtra por área de interés para encontrar lo que buscas.</p>
+        
+        <!-- Search and Filter -->
+        <div class="max-w-2xl mx-auto mb-12 space-y-4">
+            <input type="text" id="searchInput" placeholder="Busca por producto o beneficio (ej. Cúrcuma, Digestión)..." class="w-full p-4 rounded-full border border-emerald-200 focus:outline-none focus:ring-2 focus:ring-emerald-500 shadow-sm text-center">
+            <div class="flex gap-2 justify-center flex-wrap" id="filterContainer">
+                <button onclick="filterProducts('Todos')" class="px-4 py-2 bg-emerald-900 text-white rounded-full text-sm font-medium hover:bg-emerald-800 transition">Todos</button>
+                <button onclick="filterProducts('Digestivo')" class="px-4 py-2 bg-stone-200 text-emerald-950 rounded-full text-sm font-medium hover:bg-emerald-300 transition">Digestivo</button>
+                <button onclick="filterProducts('Energía')" class="px-4 py-2 bg-stone-200 text-emerald-950 rounded-full text-sm font-medium hover:bg-emerald-300 transition">Energía</button>
+                <button onclick="filterProducts('Piel')" class="px-4 py-2 bg-stone-200 text-emerald-950 rounded-full text-sm font-medium hover:bg-emerald-300 transition">Piel</button>
+            </div>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6" id="productGrid">
+            <!-- Items injected by JS -->
+        </div>
+    </section>
+
+
+     <section id="marcas" class="py-24 bg-stone-50 px-6 border-t border-stone-100">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl text-center mb-16 text-emerald-950">Nuestras Marcas aliadas</h2>
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-12 items-center justify-items-center">
+                <!-- 10 Brand placeholders -->
+                <div class="h-24 grayscale hover:grayscale-0 transition duration-500 opacity-60 hover:opacity-100"><img src="https://placehold.co/200x100/ffffff/065f46?text=BioVital" alt="Marca"></div>
+                <div class="h-24 grayscale hover:grayscale-0 transition duration-500 opacity-60 hover:opacity-100"><img src="https://placehold.co/200x100/ffffff/065f46?text=HerboPure" alt="Marca"></div>
+                <div class="h-24 grayscale hover:grayscale-0 transition duration-500 opacity-60 hover:opacity-100"><img src="https://placehold.co/200x100/ffffff/065f46?text=NaturoCos" alt="Marca"></div>
+                <div class="h-24 grayscale hover:grayscale-0 transition duration-500 opacity-60 hover:opacity-100"><img src="https://placehold.co/200x100/ffffff/065f46?text=EcoLabor" alt="Marca"></div>
+                <div class="h-24 grayscale hover:grayscale-0 transition duration-500 opacity-60 hover:opacity-100"><img src="https://placehold.co/200x100/ffffff/065f46?text=PharmaNat" alt="Marca"></div>
+                <div class="h-24 grayscale hover:grayscale-0 transition duration-500 opacity-60 hover:opacity-100"><img src="https://placehold.co/200x100/ffffff/065f46?text=FloraZen" alt="Marca"></div>
+                <div class="h-24 grayscale hover:grayscale-0 transition duration-500 opacity-60 hover:opacity-100"><img src="https://placehold.co/200x100/ffffff/065f46?text=GreenLab" alt="Marca"></div>
+                <div class="h-24 grayscale hover:grayscale-0 transition duration-500 opacity-60 hover:opacity-100"><img src="https://placehold.co/200x100/ffffff/065f46?text=Botanica" alt="Marca"></div>
+                <div class="h-24 grayscale hover:grayscale-0 transition duration-500 opacity-60 hover:opacity-100"><img src="https://placehold.co/200x100/ffffff/065f46?text=VitaEssence" alt="Marca"></div>
+                <div class="h-24 grayscale hover:grayscale-0 transition duration-500 opacity-60 hover:opacity-100"><img src="https://placehold.co/200x100/ffffff/065f46?text=PureEarth" alt="Marca"></div>
+            </div>
+        </div>
+    </section> 
+
+
+    
+    <!-- Modal -->
+    <div id="modal" class="fixed inset-0 bg-black/60 hidden items-center justify-center z-50 p-6 backdrop-blur-sm">
+        <div class="bg-white p-8 rounded-3xl max-w-lg w-full shadow-2xl">
+            <h3 id="modalTitle" class="text-3xl mb-4 text-emerald-950"></h3>
+            <p id="modalDesc" class="text-stone-600 mb-8 leading-relaxed"></p>
+            <button onclick="closeModal()" class="w-full bg-emerald-900 text-white py-3 rounded-full hover:bg-emerald-700 transition font-semibold">Cerrar</button>
+        </div>
+    </div>
+
+    <!-- Footer ... -->
     <section id="contacto" class="py-24 bg-white px-6">
         <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-5xl mb-8">¿Necesitas orientación?</h2>
-            <p class="text-xl text-stone-600 mb-12">Estamos aquí para escucharte y recomendarte los mejores caminos naturales para tu salud. Sin compromisos.</p>
+            <h2 class="text-5xl mb-8">¿Buscas orientación personalizada?</h2>
+            <p class="text-xl text-stone-600 mb-12">No estás sol@ en tu camino hacia el bienestar. Reserva una breve sesión de asesoramiento con uno de nuestros especialistas y definamos qué necesita tu cuerpo hoy.</p>
             <div class="flex flex-col md:flex-row gap-6 justify-center">
-                <a href="#" class="bg-emerald-600 text-white px-10 py-4 rounded-full font-semibold hover:bg-emerald-700 hover:scale-105 transition duration-300">WhatsApp: 600 000 000</a>
-                <a href="mailto:hola@natureia.com" class="bg-stone-100 text-emerald-950 px-10 py-4 rounded-full font-semibold hover:bg-stone-200 hover:scale-105 transition duration-300">Escríbenos un email</a>
+                <a href="#" class="bg-emerald-600 text-white px-10 py-4 rounded-full font-semibold hover:bg-emerald-700 hover:scale-105 transition duration-300">Agenda tu Cita (WhatsApp)</a>
+                <a href="mailto:hola@natureia.com" class="bg-stone-100 text-emerald-950 px-10 py-4 rounded-full font-semibold hover:bg-stone-200 hover:scale-105 transition duration-300">Escríbenos una consulta</a>
             </div>
         </div>
     </section>
 
     <footer class="py-12 text-center text-stone-500 border-t border-stone-200">
-        <p>&copy; 2026 Natureia Herbolario. Todos los derechos reservados.</p>
+        <p>&copy; 2026 Natureia | Espacio de Bienestar Consciente. Todos los derechos reservados.</p>
     </footer>
 
+    <script>
+        // Data for 50 items
+        const products = [
+            {name: "Valeriana", cat: "Digestivo", icon: "🌿", desc: "La valeriana es conocida por sus propiedades relajantes, ayudando a conciliar el sueño y reducir la ansiedad leve de forma natural."},
+            {name: "Cúrcuma", cat: "Digestivo", icon: "🌼", desc: "Potente antiinflamatorio natural que apoya la salud digestiva y protege las articulaciones."},
+            {name: "Aloe Vera", cat: "Piel", icon: "💧", desc: "Cicatrizante natural, excelente para la hidratación profunda de la piel y alivio de quemaduras menores."},
+            {name: "Jengibre", cat: "Digestivo", icon: "🔥", desc: "Ayuda a la digestión, combate las náuseas y tiene un efecto termogénico suave."},
+            {name: "Rosa Mosqueta", cat: "Piel", icon: "🌹", desc: "Regenerador celular potente para reducir cicatrices, estrías y signos de envejecimiento."},
+            {name: "Probióticos", cat: "Digestivo", icon: "🧬", desc: "Fundamentales para mantener una microbiota intestinal equilibrada y fortalecer el sistema inmune."},
+            {name: "Magnesio", cat: "Energía", icon: "⚡", desc: "Esencial para el funcionamiento muscular y nervioso, ayuda a combatir la fatiga."},
+            {name: "Lavanda", cat: "Piel", icon: "💜", desc: "Calmante tópico excelente, ayuda a regenerar pequeñas irritaciones cutáneas."},
+            {name: "Equinácea", cat: "Energía", icon: "🛡️", desc: "Tradicionalmente usada para reforzar las defensas ante cambios estacionales."},
+            {name: "Colágeno", cat: "Piel", icon: "✨", desc: "Ayuda a mantener la elasticidad de la piel y la salud de las articulaciones."},
+            {name: "Té Verde", cat: "Energía", icon: "🍵", desc: "Antioxidante natural que aporta energía suave sin los picos de cafeína del café."},
+            {name: "Espirulina", cat: "Energía", icon: "🌿", desc: "Alga densamente nutritiva, ideal para aportar vitalidad extra en etapas de cansancio."},
+            {name: "Omega-3", cat: "Energía", icon: "🐟", desc: "Ácidos grasos esenciales para la función cognitiva y la salud cardiovascular."},
+            {name: "Árbol de Té", cat: "Piel", icon: "💧", desc: "Antiséptico natural potente para el control de imperfecciones y cuidado de zonas grasas."},
+            {name: "Melisa", cat: "Digestivo", icon: "🍋", desc: "Planta carminativa excelente para aliviar gases y espasmos abdominales."},
+            ...Array.from({length: 35}, (_, i) => ({
+                name: `Producto Natural ${i + 16}`,
+                cat: i % 3 === 0 ? 'Digestivo' : i % 3 === 1 ? 'Energía' : 'Piel',
+                icon: i % 3 === 0 ? '🌿' : i % 3 === 1 ? '⚡' : '✨',
+                desc: `Este es nuestro preparado natural número ${i + 16}. Desarrollado con estándares de calidad para acompañar tu proceso de bienestar consciente.`
+            }))
+        ];
+
+        function renderProducts(filter = 'Todos', search = '') {
+            const grid = document.getElementById('productGrid');
+            grid.innerHTML = '';
+            
+            products.filter(p => 
+                (filter === 'Todos' || p.cat === filter) && 
+                (p.name.toLowerCase().includes(search.toLowerCase()) || p.desc.toLowerCase().includes(search.toLowerCase()))
+            ).forEach(p => {
+                grid.innerHTML += `
+                    <div class="bg-white p-6 rounded-2xl border border-stone-100 shadow-sm hover:shadow-xl transition text-center flex flex-col justify-between hover-lift">
+                        <div class="text-4xl mb-4">${p.icon}</div>
+                        <h4 class="font-bold text-sm mb-4 text-emerald-900">${p.name}</h4>
+                        <button onclick="openModal('${p.name}', '${p.desc}')" class="text-emerald-700 text-xs font-semibold uppercase tracking-widest underline decoration-emerald-200 underline-offset-4 hover:text-emerald-950 transition">Ver beneficios</button>
+                    </div>`;
+            });
+        }
+
+        function openModal(title, desc) {
+            document.getElementById('modalTitle').innerText = title;
+            document.getElementById('modalDesc').innerText = desc;
+            document.getElementById('modal').classList.remove('hidden');
+            document.getElementById('modal').classList.add('flex');
+        }
+
+        function closeModal() { 
+            document.getElementById('modal').classList.add('hidden'); 
+            document.getElementById('modal').classList.remove('flex');
+        }
+        
+        document.getElementById('searchInput').addEventListener('input', (e) => {
+            const currentFilter = document.querySelector('#filterContainer .bg-emerald-900')?.innerText || 'Todos';
+            renderProducts(currentFilter, e.target.value);
+        });
+
+        function filterProducts(cat) {
+            // UI update for active button
+            document.querySelectorAll('#filterContainer button').forEach(btn => {
+                btn.classList.remove('bg-emerald-900', 'text-white');
+                btn.classList.add('bg-stone-200', 'text-emerald-950');
+                if(btn.innerText === cat) {
+                    btn.classList.add('bg-emerald-900', 'text-white');
+                    btn.classList.remove('bg-stone-200', 'text-emerald-950');
+                }
+            });
+            renderProducts(cat, document.getElementById('searchInput').value);
+        }
+
+        // Initialize
+        renderProducts();
+    </script>
 </body>
 </html>
