@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natureia | Bienestar Natural</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Playfair+Display:wght@700&display=swap');
+        
+        body { font-family: 'Outfit', sans-serif; }
+        h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
+        
+        /* Animación suave para elementos */
+        .hover-lift {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .hover-lift:hover {
+            transform: translateY(-8px);
+        }
+    </style>
+</head>
+<body class="bg-stone-50 text-emerald-950">
+
+    <nav class="fixed w-full z-50 backdrop-blur-md bg-white/70 border-b border-emerald-100 py-4">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <div class="text-3xl font-bold text-emerald-800 tracking-tight">NATUREIA</div>
+            <div class="hidden md:flex space-x-8 text-sm font-semibold uppercase tracking-widest text-emerald-900">
+                <a href="#inicio" class="hover:text-emerald-600 transition">Inicio</a>
+                <a href="#productos" class="hover:text-emerald-600 transition">Colecciones</a>
+                <a href="#nosotros" class="hover:text-emerald-600 transition">Filosofía</a>
+                <a href="#contacto" class="hover:text-emerald-600 transition">Contacto</a>
+            </div>
+            <a href="#contacto" class="bg-emerald-900 text-white px-6 py-2.5 rounded-full hover:bg-emerald-700 transition duration-300 shadow-lg shadow-emerald-200">Asesoría</a>
+        </div>
+    </nav>
+
+    <header id="inicio" class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 bg-emerald-950">
+            <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb7780b9?auto=format&fit=crop&q=80&w=2000" class="w-full h-full object-cover opacity-60" alt="Naturaleza">
+        </div>
+        <div class="relative text-center text-white px-4">
+            <span class="text-emerald-300 font-semibold uppercase tracking-[0.3em] mb-4 block">Bienestar desde la raíz</span>
+            <h1 class="text-6xl md:text-8xl mb-8 leading-tight">Equilibrio que <br>florece en ti</h1>
+            <p class="text-xl mb-10 max-w-xl mx-auto font-light text-emerald-50">Explora nuestra selección de remedios naturales, aceites esenciales y sabiduría ancestral para una vida consciente.</p>
+            <div class="flex gap-4 justify-center">
+                <a href="#productos" class="bg-emerald-500 hover:bg-emerald-400 text-white px-10 py-4 rounded-full font-semibold transition-all hover:scale-105">Explorar Catálogo</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-24 px-6 max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-10 rounded-3xl border border-emerald-50 shadow-sm hover:shadow-xl transition-all duration-300">
+            <div class="w-16 h-16 bg-emerald-100 flex items-center justify-center rounded-2xl text-emerald-700 text-3xl mb-6">🌿</div>
+            <h3 class="text-2xl mb-4">Ingredientes Orgánicos</h3>
+            <p class="text-stone-600">Trabajamos exclusivamente con extractos botánicos puros, cultivados bajo prácticas de comercio justo.</p>
+        </div>
+        <div class="bg-emerald-900 text-emerald-50 p-10 rounded-3xl shadow-xl transition-all duration-300">
+            <div class="w-16 h-16 bg-emerald-800 flex items-center justify-center rounded-2xl text-emerald-200 text-3xl mb-6">✨</div>
+            <h3 class="text-2xl mb-4 text-white">Asesoría Holística</h3>
+            <p class="text-emerald-200">Nuestro equipo de expertos te guía para encontrar el remedio perfecto para tus necesidades personales.</p>
+        </div>
+        <div class="bg-white p-10 rounded-3xl border border-emerald-50 shadow-sm hover:shadow-xl transition-all duration-300">
+            <div class="w-16 h-16 bg-emerald-100 flex items-center justify-center rounded-2xl text-emerald-700 text-3xl mb-6">📦</div>
+            <h3 class="text-2xl mb-4">Envío Sostenible</h3>
+            <p class="text-stone-600">Cuidamos el planeta desde la selección hasta tu puerta con packaging 100% compostable.</p>
+        </div>
+    </section>
+
+    <section id="productos" class="py-24 bg-stone-100 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-5xl text-center mb-16 text-emerald-950">Nuestras Colecciones</h2>
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Tarjeta de producto actualizada -->
+                <div class="group bg-white rounded-3xl overflow-hidden hover-lift shadow-lg hover:shadow-2xl">
+                    <div class="h-64 bg-emerald-200 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1594897030264-ab7d87efc470?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" alt="Infusiones">
+                    </div>
+                    <div class="p-6">
+                        <h4 class="font-bold text-xl mb-2">Infusiones Relajantes</h4>
+                        <p class="text-sm text-stone-500 mb-6 line-clamp-2">Una mezcla equilibrada de valeriana, pasiflora y lavanda para tus noches.</p>
+                        <button class="w-full text-center border-2 border-emerald-900 text-emerald-900 py-3 rounded-full group-hover:bg-emerald-900 group-hover:text-white transition duration-300">Leer más</button>
+                    </div>
+                </div>
+                <!-- Tarjeta 2 -->
+                <div class="group bg-white rounded-3xl overflow-hidden hover-lift shadow-lg hover:shadow-2xl">
+                    <div class="h-64 bg-emerald-200 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1612668582766-b827e69188d3?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" alt="Cosmética">
+                    </div>
+                    <div class="p-6">
+                        <h4 class="font-bold text-xl mb-2">Aceite de Rosa Mosqueta</h4>
+                        <p class="text-sm text-stone-500 mb-6 line-clamp-2">Regeneración celular profunda con aceites de primera presión en frío.</p>
+                        <button class="w-full text-center border-2 border-emerald-900 text-emerald-900 py-3 rounded-full group-hover:bg-emerald-900 group-hover:text-white transition duration-300">Leer más</button>
+                    </div>
+                </div>
+                <!-- Tarjeta 3 -->
+                <div class="group bg-white rounded-3xl overflow-hidden hover-lift shadow-lg hover:shadow-2xl">
+                    <div class="h-64 bg-emerald-200 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1584308972272-9e4e7685e80f?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" alt="Vitaminas">
+                    </div>
+                    <div class="p-6">
+                        <h4 class="font-bold text-xl mb-2">Complejo Vitamínico B</h4>
+                        <p class="text-sm text-stone-500 mb-6 line-clamp-2">Apoyo esencial para tu vitalidad diaria y sistema nervioso.</p>
+                        <button class="w-full text-center border-2 border-emerald-900 text-emerald-900 py-3 rounded-full group-hover:bg-emerald-900 group-hover:text-white transition duration-300">Leer más</button>
+                    </div>
+                </div>
+                <!-- Tarjeta 4 -->
+                <div class="group bg-white rounded-3xl overflow-hidden hover-lift shadow-lg hover:shadow-2xl">
+                    <div class="h-64 bg-emerald-200 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" alt="Probióticos">
+                    </div>
+                    <div class="p-6">
+                        <h4 class="font-bold text-xl mb-2">Probióticos Premium</h4>
+                        <p class="text-sm text-stone-500 mb-6 line-clamp-2">Microbiota sana, cuerpo fuerte. La base de tu bienestar digestivo.</p>
+                        <button class="w-full text-center border-2 border-emerald-900 text-emerald-900 py-3 rounded-full group-hover:bg-emerald-900 group-hover:text-white transition duration-300">Leer más</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="py-24 bg-white px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-5xl mb-8">¿Necesitas orientación?</h2>
+            <p class="text-xl text-stone-600 mb-12">Estamos aquí para escucharte y recomendarte los mejores caminos naturales para tu salud. Sin compromisos.</p>
+            <div class="flex flex-col md:flex-row gap-6 justify-center">
+                <a href="#" class="bg-emerald-600 text-white px-10 py-4 rounded-full font-semibold hover:bg-emerald-700 hover:scale-105 transition duration-300">WhatsApp: 600 000 000</a>
+                <a href="mailto:hola@natureia.com" class="bg-stone-100 text-emerald-950 px-10 py-4 rounded-full font-semibold hover:bg-stone-200 hover:scale-105 transition duration-300">Escríbenos un email</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 text-center text-stone-500 border-t border-stone-200">
+        <p>&copy; 2026 Natureia Herbolario. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
